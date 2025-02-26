@@ -1,1 +1,14 @@
-node_modules/\nbackend/vendor/\nbackend/.env\nfrontend/node_modules/
+# Node.js dependencies
+frontend/node_modules/
+
+# Laravel dependencies
+backend/vendor/
+
+# Environment files
+backend/.env
+frontend/.env
+
+# Other ignored files
+backend/storage/
+backend/public/storage
+backend/bootstrap/cache/
