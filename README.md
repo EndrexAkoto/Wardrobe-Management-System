@@ -97,7 +97,7 @@ cd Wardrobe-Management-System
 
     The backend should now be accessible at http://localhost:8000.
 
-# Optional: Database Setup (MySQL)
+# Database Setup (MySQL)
 
     Make sure you have MySQL installed and running. Update your .env file to reflect your MySQL credentials:
     env
