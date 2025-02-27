@@ -17,11 +17,11 @@ The Wardrobe Management System is designed to help users manage their wardrobe e
 
 # Tech Stack
 
- ## Frontend: Vue 3, Bootstrap
+  Frontend: Vue 3, Bootstrap
 
- ## Backend: Laravel 11
+  Backend: Laravel 11
 
- ## Database: MySQL (or another SQL database)
+  Database: MySQL (or another SQL database)
 
 # Features
 
