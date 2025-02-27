@@ -1,14 +1,14 @@
 <template>
   <div class="auth-container">
-    <h2>Login</h2>
-    <form @submit.prevent="handleLogin">
+    <h2>Register</h2>
+    <form @submit.prevent="handleRegister">
       <label>Email:</label>
       <input type="email" v-model="email" required />
 
       <label>Password:</label>
       <input type="password" v-model="password" required />
 
-      <button type="submit">Login</button>
+      <button type="submit">Register</button>
     </form>
   </div>
 </template>
@@ -22,12 +22,12 @@ export default {
     };
   },
   methods: {
-    async handleLogin() {
+    async handleRegister() {
       try {
-        // Call API for authentication (to be implemented later)
-        console.log("Logging in with", this.email, this.password);
+        // Register logic (to be implemented later)
+        console.log("Registering with", this.email, this.password);
       } catch (error) {
-        console.error("Login failed", error);
+        console.error("Registration failed", error);
       }
     }
   }

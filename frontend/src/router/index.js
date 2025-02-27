@@ -1,14 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import App from '../App.vue'  // Import App.vue
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.bundle.min"
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/login', component: Login },
-  { path: '/register', component: Register },
+  { path: '/', name: 'Landing', component: App }, // App.vue as the landing page
+  { path: '/login', name: 'Login', component: Login },
+  { path: '/register', name: 'Register', component: Register },
 ]
 
 const router = createRouter({
