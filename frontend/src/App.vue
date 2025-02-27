@@ -1,47 +1,143 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="landing-page">
+    <!-- Header Section -->
+    <header class="header">
+      <img src="" alt="" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#cta">Get Started</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Manage Your Wardrobe with Ease</h1>
+      <p>Organize your outfits, track inventory, and style effortlessly.</p>
+      <button class="cta-button">Get Started</button>
+    </section>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Our Wardrobe Management System</h2>
+      <p>Our system helps you keep track of your clothing, create outfits, and never forget what you own.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <img src="./assets/02.png" alt="Track Items" />
+          <p>Track your wardrobe items</p>
+        </div>
+        <div class="feature-item">
+          <img src="./assets/03.png" alt="Outfits" />
+          <p>Create and save outfit combinations</p>
+        </div>
+        <div class="feature-item">
+          <img src="./assets/04.png" alt="Plan" />
+          <p>Plan what to wear for any occasion</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+      <h2>Start Organizing Your Wardrobe Today!</h2>
+      <button class="cta-button">Sign Up Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Wardrobe Management System. All Rights Reserved.</p>
+    </footer>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.landing-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2C3E50;
+  color: white;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  height: 50px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+nav ul li {
+  display: inline;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: #1E88E5;
+  color: white;
+  padding: 50px 20px;
+}
+
+.cta-button {
+  background: white;
+  color: #1E88E5;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.about, .features, .cta {
+  padding: 40px 20px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.feature-item img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Footer */
+.footer {
+  background: #2C3E50;
+  color: white;
+  padding: 10px;
 }
 </style>
