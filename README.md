@@ -1,114 +1,129 @@
 # Wardrobe Management System
 
-## License
-This project is open source and available under the MIT License.
+# Table of Contents
 
-## Build Status
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-
-## Table of Contents
+ ## Table of Contents
 1. [Overview](#overview)
 2. [Tech Stack](#tech-stack)
 3. [Features](#features)
 4. [Setup Instructions](#setup-instructions)
-5. [Screenshots](#screenshots)
 6. [Future Enhancements](#future-enhancements)
 7. [Contributing](#contributing)
 8. [License](#license)
 
-## Overview
-The **Wardrobe Management System** is designed to help users manage their wardrobe efficiently. The app allows users to add, edit, and delete clothing items, categorize them (e.g., tops, bottoms, shoes), and track their inventory. It features a responsive UI built with Vue 3 and Bootstrap, and includes user authentication (login/registration).
+# Overview
 
-## Tech Stack
-- **Frontend**: Vue 3, Bootstrap
-- **Backend**: Laravel 11
-- **Database**: MySQL (or another SQL database)
+The Wardrobe Management System is designed to help users manage their wardrobe efficiently. The app allows users to add, edit, and delete clothing items, categorize them (e.g., tops, bottoms, shoes), and track their inventory. It features a responsive UI built with Vue 3 and Bootstrap, and includes user authentication (login/registration).
 
-## Features
-- **User Authentication**: Login and registration functionality for users.
-- **CRUD Operations**: Add, edit, and delete clothing items.
-- **Categorization**: Ability to categorize items (e.g., tops, bottoms, shoes).
-- **Filtering and Searching**: Filter and search functionality for easy navigation.
-- **Responsive UI**: A user-friendly and mobile-responsive interface built with Vue 3 and Bootstrap.
+# Tech Stack
+
+ ## Frontend: Vue 3, Bootstrap
+
+ ## Backend: Laravel 11
+
+ ## Database: MySQL (or another SQL database)
+
+# Features
+
+    User Authentication: Login and registration functionality for users.
+
+    CRUD Operations: Add, edit, and delete clothing items.
+
+    Categorization: Ability to categorize items (e.g., tops, bottoms, shoes).
+
+    Filtering and Searching: Filter and search functionality for easy navigation.
+
+    Responsive UI: A user-friendly and mobile-responsive interface built with Vue 3 and Bootstrap.
 
 ## Setup Instructions
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
-```bash
 git clone https://github.com/EndrexAkoto/Wardrobe-Management-System.git
 cd Wardrobe-Management-System
 
-## Install Dependencies
+## 2. Install Dependencies
 
-    Frontend Setup (Vue 3)
-        Navigate to the frontend folder:
+# Frontend Setup (Vue 3)
 
-cd frontend
+    Navigate to the frontend folder:
+   
 
-Install frontend dependencies:
+    cd frontend
 
-npm install
+    Install frontend dependencies:
+    
 
-Start the frontend development server:
+    npm install
+
+    Start the frontend development server:
+    
 
     npm run dev
 
     The frontend should now be accessible at http://localhost:5173.
 
-Backend Setup (Laravel 11)
+# Backend Setup (Laravel 11)
 
-    Navigate to the backend folder:
+  ## Navigate to the backend folder:
+    
 
-cd backend
+    cd backend
 
-Install backend dependencies:
+    Install backend dependencies:
+    
 
-composer install
+  ## composer install
 
-Set up the .env file by duplicating .env.example and configuring your database settings:
+    Set up the .env file by duplicating .env.example and configuring your database settings:
+    
 
-cp .env.example .env
+    cp .env.example .env
 
-Generate an application key:
+    Generate an application key:
+    
 
-php artisan key:generate
+    php artisan key:generate
 
-Run database migrations:
+    Run database migrations:
+    
 
-php artisan migrate
+    php artisan migrate
 
-Start the Laravel development server:
+    Start the Laravel development server:
+    
 
-        php artisan serve
+    php artisan serve
 
-        The backend should now be accessible at http://localhost:8000.
+    The backend should now be accessible at http://localhost:8000.
 
-3. Optional: Database Setup (MySQL)
+# Optional: Database Setup (MySQL)
 
-## Make sure you have MySQL installed and running. Update your .env file to reflect your MySQL credentials:
+    Make sure you have MySQL installed and running. Update your .env file to reflect your MySQL credentials:
+    env
+    
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=wardrobe_system
-DB_USERNAME=root
-DB_PASSWORD=
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=wardrobe_system
+    DB_USERNAME=root
+    DB_PASSWORD=
 
-## Run the migrations again to ensure the database is set up correctly:
+    Run the migrations again to ensure the database is set up correctly:
 
-php artisan migrate
+    php artisan migrate
 
-4. Access the Application
+3. Access the Application
 
     Frontend: http://localhost:5173
+
     Backend: http://localhost:8000
 
 
-## Dashboard
-
-Future Enhancements
+# Future Enhancements
 
     Deployment instructions.
+
     Additional features such as outfit recommendations or styling suggestions.
 
